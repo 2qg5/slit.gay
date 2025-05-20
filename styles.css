@@ -48,6 +48,7 @@ p {
   display: flex;
   gap: 10px;
   margin-top: 20px;
+  flex-wrap: wrap;
 }
 
 .search-container button {
@@ -57,9 +58,13 @@ p {
   background-color: #ff5fc0;
   color: white;
   cursor: pointer;
+  white-space: nowrap;
 }
 
+
 .search-container input {
+  flex: 1;
+  min-width: 250px;
   padding: 10px 15px;
   border-radius: 8px;
   border: none;
@@ -86,6 +91,10 @@ button {
     color: white;
     font-size: 1.2rem;
     transition: background 0.3s ease;
+}
+
+.report-button {
+  order: -1;
 }
 
 button:hover {
