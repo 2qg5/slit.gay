@@ -35,28 +35,36 @@ p {
     color: #888;
 }
 
-.center-box {
+.center-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh; /* full screen height */
+  min-height: 100vh;
+  text-align: center;
 }
 
 .search-container {
   display: flex;
-  align-items: center;
-  gap: 10px; /* spacing between buttons and input */
+  gap: 10px;
   margin-top: 20px;
 }
 
 .search-container button {
-  padding: 10px 16px;
+  padding: 10px 15px;
   border-radius: 8px;
   border: none;
   background-color: #ff5fc0;
   color: white;
   cursor: pointer;
+}
+
+.search-container input {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+  background-color: #2e2e2e;
+  color: white;
 }
 
 input[type="text"] {
