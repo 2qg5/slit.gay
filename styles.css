@@ -35,10 +35,10 @@ p {
     color: #888;
 }
 
-.search-container {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 2rem;
+.search-container button {
+  margin-left: 8px;
+  padding: 6px 12px;
+  cursor: pointer;
 }
 
 input[type="text"] {
