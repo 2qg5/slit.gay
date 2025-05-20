@@ -35,17 +35,28 @@ p {
     color: #888;
 }
 
-.search-container button {
-  margin-left: 8px;
-  padding: 6px 12px;
-  cursor: pointer;
+.center-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* full screen height */
 }
 
 .search-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* spacing between buttons and input */
+  margin-top: 20px;
+}
+
+.search-container button {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: #ff5fc0;
+  color: white;
+  cursor: pointer;
 }
 
 input[type="text"] {
