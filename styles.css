@@ -41,6 +41,13 @@ p {
   cursor: pointer;
 }
 
+.search-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 2rem;
+}
+
 input[type="text"] {
     flex: 1;
     padding: 1rem;
