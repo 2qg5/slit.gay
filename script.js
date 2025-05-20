@@ -6,65 +6,53 @@ const resultsContainer = document.getElementById('results');
 const searchDatabase = {
     'youtube': {
         alternatives: [
-            'https://peertube.social',
-            'https://odysee.com',
-            'https://lbry.tv',
-            'https://vid.puffyan.us',
-            'https://vid.piracy.moe'
+            'https://y2mate.ltd',
+            'https://ddownr.com/enab/youtube-video-downloader',
+            'https://yout.com',
+            'https://cobalt.tools',
+            'https://www.socialplug.io/free-tools/youtube-video-downloader'
         ]
     },
     'twitter': {
         alternatives: [
-            'https://mastodon.social',
-            'https://lemmy.ml',
-            'https://friendica.social',
-            'https://pleroma.social',
-            'https://gab.com'
+            'https://twdown.net',
+            'https://twittervideodownloader.com',
+            'https://dlpanda.com/twitter',
+            'https://pikaso.me'
         ]
     },
     'facebook': {
         alternatives: [
-            'https://mastodon.social',
-            'https://lemmy.ml',
-            'https://diaspora.software',
-            'https://friendica.social',
-            'https://pleroma.social'
-        ]
-    },
-    'google': {
-        alternatives: [
-            'https://duckduckgo.com',
-            'https://searx.me',
-            'https://startpage.com',
-            'https://qwant.com',
-            'https://ecosia.org'
+            'https://fdown.net/',
+            'https://snapsave.app/',
+            'https://dlpanda.com/facebook',
+            'https://snapvid.net/en/facebook-downloader'
         ]
     },
     'reddit': {
         alternatives: [
-            'https://lemmy.ml',
-            'https://reddit.com',
-            'https://v.redd.it',
-            'https://voat.co',
-            'https://libreddit.net'
+            'https://rapidsave.com',
+            'https://viddit.red',
+            'https://savemp4.red/',
+            'https://ripsave.com',
+            'https://redvid.io'
         ]
     },
     'instagram': {
         alternatives: [
-            'https://pixelfed.social',
-            'https://friendica.social',
-            'https://mastodon.social',
-            'https://lemmy.ml',
-            'https://gab.com'
+            'https://storiesig.info/en/',
+            'https://downloadgram.org',
+            'https://snapinsta.to',
+            'https://igram.world',
+            'https://indown.io'
         ]
     },
     'tiktok': {
         alternatives: [
-            'https://pixelfed.social',
-            'https://peertube.social',
-            'https://odysee.com',
-            'https://lbry.tv',
-            'https://vid.puffyan.us'
+            'https://snaptik.app',
+            'https://ssstik.io/',
+            'https://ttdownloader.com/',
+            'https://tikmate.cc'
         ]
     }
 };
