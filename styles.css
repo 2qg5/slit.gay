@@ -142,6 +142,13 @@ button:hover {
     text-decoration: none;
 }
 
+.logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
 .alternative-link:hover {
     color: #ff69b4;
 }
