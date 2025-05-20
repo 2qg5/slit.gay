@@ -2,7 +2,6 @@ const searchInput = document.getElementById('searchInput');
 const searchButton = document.getElementById('searchButton');
 const resultsContainer = document.getElementById('results');
 
-// Sample search data - this should be replaced with a proper backend API
 const searchDatabase = {
     'youtube': {
         alternatives: [
@@ -14,6 +13,14 @@ const searchDatabase = {
         ]
     },
     'twitter': {
+        alternatives: [
+            'https://twdown.net',
+            'https://twittervideodownloader.com',
+            'https://dlpanda.com/twitter',
+            'https://pikaso.me'
+        ]
+    },
+    'x': {
         alternatives: [
             'https://twdown.net',
             'https://twittervideodownloader.com',
@@ -72,20 +79,20 @@ function displayResults(query) {
 
     const alternatives = result.alternatives;
     
-    // Add loading state
     resultsContainer.innerHTML = `
         <div class="result-item">
             <p>Loading alternatives...</p>
         </div>
     `;
 
-    // Show results after a small delay
     setTimeout(() => {
         resultsContainer.innerHTML = `
             <div class="result-item">
                 <div class="alternative-links">
                     ${alternatives.map(url => `
-                        <a href="${url}" class="alternative-link" target="_blank">${new URL(url).hostname}</a>
+                      <a href="${url}" class="alternative-link" target="_blank" style="display:block; margin-bottom:5px;">
+                        ${new URL(url).hostname}
+                    </a>
                     `).join('')}
                 </div>
             </div>
