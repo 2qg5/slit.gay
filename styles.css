@@ -157,30 +157,33 @@ p {
   font-size: 14px;
   font-family: sans-serif;
   z-index: 999;
-  background: none;
-  color: white;
   pointer-events: none;
 }
 
 #dev-credit a {
   pointer-events: auto;
   background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet, red);
-  background-size: 400%;
-  -webkit-background-clip: text;
+  background-size: 300% auto;
   background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
   -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
   animation: rainbowShift 5s linear infinite;
   text-decoration: none;
   font-weight: bold;
 }
 
+#dev-credit a:visited {
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
 @keyframes rainbowShift {
   0% {
-    background-position: 0% 50%;
+    background-position: 0% center;
   }
   100% {
-    background-position: 100% 50%;
+    background-position: 100% center;
   }
 }
 
