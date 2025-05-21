@@ -3,20 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Feedback - slit.gay</title>
-  <link rel="stylesheet" href="/styles.css">
+  <title>Report a Website - slit.gay</title>
+  <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
   <div class="center-wrapper">
-    <h1>Feedback</h1>
-    <p>Let us know what's wrong or how we can improve!</p>
+    <h1>Report a Website</h1>
+    <p class="subtitle">If one or more of the download websites are broken, has ads, or is malicious, let me know below.</p>
 
-    <form class="feedback-form">
-      <textarea placeholder="Write your feedback here..." required></textarea>
+    <form action="https://formspree.io/f/mdkgjpdw" method="POST" class="feedback-form">
+      <label for="email">Your email:</label>
+      <input type="email" name="email" id="email" required>
+
+      <label for="message">Message:</label>
+      <textarea name="message" id="message" rows="5" required></textarea>
+
       <button type="submit">Submit</button>
     </form>
 
-    <a href="/" class="back-button">← Go back to search</a>
+    <a href="/" class="back-button">← Back to Search</a>
   </div>
 </body>
 </html>
