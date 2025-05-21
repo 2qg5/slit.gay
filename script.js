@@ -50,7 +50,7 @@ const searchDatabase = {
 function displayResults(siteKey) {
   const site = searchDatabase[siteKey.toLowerCase()];
   if (!site) {
-    resultsContainer.innerHTML = `<p>No alternatives found for "${siteKey}".</p>`;
+    resultsContainer.innerHTML = `<p>Looks like there are no matches for "${siteKey}".</p>`;
   } else {
     resultsContainer.innerHTML = site.alternatives.map(link => `
       <div class="result-item">
