@@ -143,8 +143,8 @@ button:hover {
 }
 
 .logo {
-  width: 10px;
-  height: 10px;
+  width: 100px;
+  height: 100px;
   object-fit: contain;
   margin-bottom: 10px;
 }
