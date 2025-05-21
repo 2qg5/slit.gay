@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <meta name="description" content="Find non malicious websites to download content without worrying about malware or ad-spam." />
+  <meta name="description" content="Find non malicious websites to download content without worrying about malware or ads." />
   <meta name="theme-color" content="#ff69b4" />
-  <title>slit.gay - Download Content Risk-free</title>
+  <title>slit.gay - #1 Media Download Hub</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -18,12 +18,26 @@
     <header>
       <img src="/slit.gay.logo.png" alt="Logo" class="logo" />
       <h1>slit.gay</h1>
-      <p>Download Your Content At Ease</p>
+      <p>Make yourself at home, and download some media.</p>
     </header>
 
     <div class="search-container">
-      <a href="https://slit.gay/feedback" class="report-button-link">Report a Website</a>
-      <input type="text" id="searchInput" placeholder="Search for a website..." />
+      <a href="https://slit.gay/feedback" class="report-button-link">Feedback & Reporting</a>
+
+      <!-- 🔽 Autofill-enabled input -->
+      <input list="supported-sites" id="searchInput" placeholder="Search for the name of a website" />
+      <datalist id="supported-sites">
+        <option value="youtube">
+        <option value="reddit">
+        <option value="twitter">
+        <option value="instagram">
+        <option value="tiktok">
+        <option value="twitch">
+        <option value="facebook">
+        <option value="x">
+        <!-- add more if needed -->
+      </datalist>
+
       <button id="searchButton"><i class="fas fa-search"></i></button>
     </div>
 
