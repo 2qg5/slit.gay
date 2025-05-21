@@ -7,20 +7,20 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>Report a Website</h1>
-  <p>In case one of the websites I have listed either does not work, has ads on it, or any other reason, please let me know:</p>
+  <div class="center-wrapper">
+    <h1>Report a Website</h1>
+    <p>If one of the listed websites is broken, has ads, or is malicious, let me know:</p>
+    <form action="https://formspree.io/f/mdkgjpdw" method="POST">
+      <label for="email">Your email:</label><br>
+      <input type="email" name="email" id="email" required><br><br>
 
-  <form action="https://formspree.io/f/mdkgjpdw" method="POST">
-    <label for="email">Your email:</label><br>
-    <input type="email" name="email" id="email" required><br><br>
+      <label for="message">Message:</label><br>
+      <textarea name="message" id="message" rows="5" required></textarea><br><br>
 
-    <label for="message">Message:</label><br>
-    <textarea name="message" id="message" rows="5" required></textarea><br><br>
-
-    <button type="submit">Submit</button>
-  </form>
-
-  <br>
-  <a href="index.html">← Back to Search</a>
+      <button type="submit">Submit</button>
+    </form>
+    <br>
+    <a href="index.html">← Back to Search</a>
+  </div>
 </body>
 </html>
