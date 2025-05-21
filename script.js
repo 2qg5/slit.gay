@@ -44,6 +44,14 @@ const searchDatabase = {
       'https://ripsave.com',
       'https://redvid.io'
     ]
+  },
+   twitch: {
+    alternatives: [
+      'https://dwitch.net/',
+      'https://untwitch.com/',
+      'https://cobalt.tools',
+      'https://voddownloader.com'
+    ]
   }
 };
 
