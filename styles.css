@@ -150,7 +150,7 @@ p {
     color: #ff69b4;
 }
 
-.dev-credit {
+#dev-credit {
   position: fixed;
   bottom: 10px;
   right: 15px;
@@ -161,7 +161,7 @@ p {
   color: white;
 }
 
-.dev-credit a {
+#dev-credit a {
   background: linear-gradient(90deg, 
     red, orange, yellow, green, blue, indigo, violet, red);
   background-size: 400%;
