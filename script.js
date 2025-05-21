@@ -67,23 +67,25 @@ const searchDatabase = {
 function displayResults(query) {
     const queryLower = query.toLowerCase();
     const result = searchDatabase[queryLower];
-    
+
     if (!result) {
         resultsContainer.innerHTML = `
             <div class="result-item">
                 <p>No results found for "${query}"</p>
             </div>
         `;
+        resultsContainer.style.display = 'block'; // show if there's a "no results" message
         return;
     }
 
     const alternatives = result.alternatives;
-    
+
     resultsContainer.innerHTML = `
         <div class="result-item">
             <p>Loading alternatives...</p>
         </div>
     `;
+    resultsContainer.style.display = 'block'; // show while loading
 
     setTimeout(() => {
         resultsContainer.innerHTML = `
@@ -92,7 +94,7 @@ function displayResults(query) {
                     ${alternatives.map(url => `
                       <a href="${url}" class="alternative-link" target="_blank" style="display:block; margin-bottom:5px;">
                         ${new URL(url).hostname}
-                    </a>
+                      </a>
                     `).join('')}
                 </div>
             </div>
