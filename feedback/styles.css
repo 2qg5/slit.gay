@@ -67,16 +67,18 @@ h1 {
   background: #8e2de2;
 }
 
-/* Back button */
-.back-button {
+.real-button {
   display: inline-block;
   margin-top: 1.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #6a0dad;
+  color: white;
   text-decoration: none;
-  color: #aaa;
-  font-size: 0.9rem;
-  transition: color 0.2s ease;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.2s ease;
 }
 
-.back-button:hover {
-  color: white;
+.real-button:hover {
+  background-color: #8e2de2;
 }
