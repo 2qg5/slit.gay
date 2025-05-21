@@ -148,3 +148,7 @@ button:hover {
 .alternative-link:hover {
     color: #ff69b4;
 }
+
+#results {
+  display: none;
+}
